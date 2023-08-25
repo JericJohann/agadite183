@@ -3,24 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to Our Website!</title>
+<title>Your Name - Resume</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
   }
 
-  .container {
+  .resume {
+    max-width: 800px;
+    margin: 50px auto;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
 
@@ -29,32 +26,57 @@
     margin-bottom: 10px;
   }
 
+  h2 {
+    color: #007bff;
+    margin-top: 20px;
+  }
+
   p {
     color: #666666;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
-  .btn {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li::before {
+    content: "\2022";
+    color: #007bff;
+    font-weight: bold;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn:hover {
-    background-color: #0056b3;
+    width: 1em;
+    margin-left: -1em;
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <h1>Welcome to Our Website!</h1>
-  <p>We're excited to have you here. Explore, discover, and enjoy the content we have prepared for you.</p>
-  <a href="#" class="btn">Get Started</a>
+<div class="resume">
+  <h1>Your Name</h1>
+  <p>Web Developer</p>
+
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <p>Phone: (123) 456-7890</p>
+
+  <h2>Summary</h2>
+  <p>Experienced web developer with a passion for creating user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript, and responsive design.</p>
+
+  <h2>Experience</h2>
+  <ul>
+    <li>
+      <h3>Web Developer - ABC Tech</h3>
+      <p>Developed and maintained company websites using HTML, CSS, and JavaScript. Collaborated with design and marketing teams to implement website updates and enhancements.</p>
+    </li>
+    <li>
+      <h3>Freelance Web Designer</h3>
+      <p>Worked with clients to create custom website designs that aligned with their branding. Built responsive and mobile-friendly websites to improve user experience.</p>
+    </li>
+  </ul>
+
+  <h2>Education</h2>
+  <p>Bachelor of Science in Computer Science - XYZ University</p>
 </div>
 </body>
 </html>
-
