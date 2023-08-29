@@ -3,80 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name - Resume</title>
+<title>Your Resume</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
   }
-
-  .resume {
+  .container {
     max-width: 800px;
-    margin: 50px auto;
-    background-color: #ffffff;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
-
-  h1 {
-    color: #333333;
-    margin-bottom: 10px;
+  .profile {
+    text-align: center;
+    position: relative;
   }
-
-  h2 {
-    color: #007bff;
-    margin-top: 20px;
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: rotate 5s infinite linear;
   }
-
-  p {
-    color: #666666;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  li::before {
-    content: "\2022";
-    color: #007bff;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 </style>
 </head>
 <body>
-<div class="resume">
-  <h1>Your Name</h1>
-  <p>Web Developer</p>
-
+<div class="container">
+  <div class="profile">
+    <img src="your-profile-image.jpg" alt="Profile Image">
+    <h1>Your Name</h1>
+    <p>Frontend Developer</p>
+  </div>
+  <h2>About Me</h2>
+  <p>Your introduction goes here. Talk about your skills, experiences, and aspirations.</p>
+  <h2>Education</h2>
+  <p>Bachelor's in Computer Science - Your University - Graduation Year</p>
+  <h2>Experience</h2>
+  <p>Frontend Developer - Company Name - Start Year to End Year</p>
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML5, CSS3</li>
+    <li>JavaScript</li>
+    <li>Responsive Web Design</li>
+    <!-- Add more skills as needed -->
+  </ul>
   <h2>Contact</h2>
   <p>Email: your.email@example.com</p>
-  <p>Phone: (123) 456-7890</p>
-
-  <h2>Summary</h2>
-  <p>Experienced web developer with a passion for creating user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript, and responsive design.</p>
-
-  <h2>Experience</h2>
-  <ul>
-    <li>
-      <h3>Web Developer - ABC Tech</h3>
-      <p>Developed and maintained company websites using HTML, CSS, and JavaScript. Collaborated with design and marketing teams to implement website updates and enhancements.</p>
-    </li>
-    <li>
-      <h3>Freelance Web Designer</h3>
-      <p>Worked with clients to create custom website designs that aligned with their branding. Built responsive and mobile-friendly websites to improve user experience.</p>
-    </li>
-  </ul>
-
-  <h2>Education</h2>
-  <p>Bachelor of Science in Computer Science - XYZ University</p>
+  <p>Website: yourwebsite.com</p>
 </div>
 </body>
 </html>
