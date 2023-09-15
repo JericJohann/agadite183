@@ -801,16 +801,7 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-body {
-    margin: 0;
-    overflow: hidden;
-}
 
-#following-image {
-    position: absolute;
-    pointer-events: none; /* Allows mouse events to pass through the image */
-    transition: transform 0.2s; /* Add a smooth transition for resizing */
-}
 
 
 
